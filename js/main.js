@@ -27,6 +27,7 @@
 
 	var fullHeight = function() {
 
+        console.log('Full Height!!!');
 		if ( !isMobile.any() ) {
 			$('.js-fullheight').css('height', $(window).height());
 			$(window).resize(function(){
@@ -38,6 +39,7 @@
 
 
 	var counter = function() {
+        console.log('Counter!!!');
 		$('.js-counter').countTo({
 			 formatter: function (value, options) {
 	      return value.toFixed(options.decimals);
@@ -47,6 +49,7 @@
 
 
 	var counterWayPoint = function() {
+        console.log('Counter Way Point!!!');
 		if ($('#colorlib-counter').length > 0 ) {
 			$('#colorlib-counter').waypoint( function( direction ) {
 										
@@ -60,6 +63,7 @@
 
 	// Animations
 	var contentWayPoint = function() {
+        //console.log('Counter Way Pont 2!!!');
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
 
@@ -71,7 +75,8 @@
 				setTimeout(function(){
 
 					$('body .animate-box.item-animate').each(function(k){
-						var el = $(this);
+                        var el = $(this);
+                        console.log('Acho que peguei => ', el[0].className);
 						setTimeout( function () {
 							var effect = el.data('animate-effect');
 							if ( effect === 'fadeIn') {
@@ -85,7 +90,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 10, 'easeInOutExpo' );
 					});
 					
 				}, 100);
@@ -171,6 +176,8 @@
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
 
+        //console.log('NAV Active!!!', section);
+
 		var $el = $('#navbar > ul');
 		$el.find('li').removeClass('active');
 		$el.each(function(){
@@ -181,11 +188,14 @@
 
 	var navigationSection = function() {
 
-		var $section = $('section[data-section]');
+        var $section = $('section[data-section]');
+        
+        console.log('SECAO => ', $section);
 		
 		$section.waypoint(function(direction) {
 		  	
 		  	if (direction === 'down') {
+                  console.log('qqqq', $(this.element));
 		    	navActive($(this.element).data('section'));
 		  	}
 		}, {
@@ -208,7 +218,7 @@
 
 
 	var sliderMain = function() {
-		
+
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
