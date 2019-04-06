@@ -237,6 +237,17 @@ figure {
       width: 100%;
       padding: 0 1em; } }
 
+#colorlib-main-work {
+  width: calc(100% - 300px);
+  float: left;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  @media screen and (max-width: 768px) {
+    #colorlib-main-work {
+      width: 100%;
+      padding: 0 1em; } }
+
 #colorlib-hero {
   min-height: 500px;
   background: #fff url(../images/loader.gif) no-repeat center center;
@@ -833,6 +844,30 @@ body.offcanvas {
       background: #4054b2; }
     .progress-bar.color-6 span {
       color: #4054b2; }
+  .progress-bar.color-7 {
+    background: #ec7de7; }
+    .progress-bar.color-7:after {
+      background: #ec7de7; }
+    .progress-bar.color-7 span {
+      color: #ec7de7; }
+  .progress-bar.color-8 {
+    background: #b37415; }
+    .progress-bar.color-8:after {
+      background: #b37415; }
+    .progress-bar.color-8 span {
+      color: #b37415; }
+  .progress-bar.color-9 {
+    background: #777777; }
+    .progress-bar.color-9:after {
+      background: #777777; }
+    .progress-bar.color-9 span {
+      color: #777777; }
+  .progress-bar.color-10 {
+    background: #21ac3f; }
+    .progress-bar.color-10:after {
+      background: #21ac3f; }
+    .progress-bar.color-10 span {
+      color: #21ac3f; }
 
 .colorlib-feature {
   text-align: left;

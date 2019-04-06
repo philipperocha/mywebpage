@@ -16,6 +16,11 @@ $brand-color-4: #a84cb8 !default;
 $brand-color-5: #2fa499 !default;
 $brand-color-6: #4054b2 !default;
 
+$brand-color-7: #ec7de7 !default;
+$brand-color-8: #b37415 !default;
+$brand-color-9: #777777 !default;
+$brand-color-10: #21ac3f !default;
+
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -357,6 +362,15 @@ figure {
 #colorlib-main {
 	width: calc(100% - 300px);
 	float: right;
+	@include transition(.5s);
+	@media screen and (max-width: $screen-sm) {
+		width: 100%;
+		padding: 0 1em;
+	}
+}
+#colorlib-main-work {
+	width: calc(100% - 300px);
+	float: left;
 	@include transition(.5s);
 	@media screen and (max-width: $screen-sm) {
 		width: 100%;
@@ -1088,6 +1102,42 @@ margin-left: -20px;
 		}
 		span{
 			color: $brand-color-6;
+		}
+	}
+	&.color-7{
+		background: $brand-color-7;
+		&:after{
+			background: $brand-color-7;
+		}
+		span{
+			color: $brand-color-7;
+		}
+	}
+	&.color-8{
+		background: $brand-color-8;
+		&:after{
+			background: $brand-color-8;
+		}
+		span{
+			color: $brand-color-8;
+		}
+	}
+	&.color-9{
+		background: $brand-color-9;
+		&:after{
+			background: $brand-color-9;
+		}
+		span{
+			color: $brand-color-9;
+		}
+	}
+	&.color-10{
+		background: $brand-color-10;
+		&:after{
+			background: $brand-color-10;
+		}
+		span{
+			color: $brand-color-10;
 		}
 	}
 }
