@@ -467,11 +467,11 @@ body.offcanvas {
   font-weight: 400; }
   .about-desc .btn.btn-learn {
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     background: transparent !important; }
     .about-desc .btn.btn-learn:hover {
       background: transparent !important;
-      border: 1px solid #000 !important; }
+      border: 1px solid rgba(0, 0, 0, 0.9) !important; }
   @media screen and (max-width: 768px) {
     .about-desc .btn {
       width: 100%; } }
@@ -904,7 +904,7 @@ body.offcanvas {
       vertical-align: middle;
       color: #2c98f0;
       font-size: 60px;
-      height: 100px; }
+      height: 50px; }
       @media screen and (max-width: 1200px) {
         .colorlib-feature .colorlib-icon i {
           font-size: 40px; } }
@@ -954,7 +954,7 @@ body.offcanvas {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2c98f0;
+    background: rgba(0, 0, 0, 0.8);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1006,18 +1006,6 @@ body.offcanvas {
       transform: translate3d(0, 15px, 0); }
       .project .desc span a {
         color: #000; }
-    @media screen and (max-width: 768px) {
-      .project .desc {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.4); }
-        .project .desc h3 {
-          font-style: 28px;
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-          color: #000; }
-        .project .desc span {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
   .project:hover .desc {
     opacity: 1; }
     .project:hover .desc h3 {
@@ -1029,6 +1017,9 @@ body.offcanvas {
 
 .btn-load-more {
   width: 100%; }
+
+.work-label {
+  color: #d6d6d6; }
 
 #colorlib-counter {
   position: relative;
