@@ -81,7 +81,7 @@ figure {
   overflow-y: hidden;
   z-index: 1001;
   background: #f2f3f7;
-  background: #eeebc8;
+  background: #f0f0f0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -874,11 +874,11 @@ body.offcanvas {
     .progress-bar.color-10 span {
       color: #21ac3f; }
   .progress-bar.color-11 {
-    background: #9ccaf0; }
+    background: #a8cff0; }
     .progress-bar.color-11:after {
-      background: #9ccaf0; }
+      background: #a8cff0; }
     .progress-bar.color-11 span {
-      color: #9ccaf0; }
+      color: #a8cff0; }
 
 .colorlib-feature {
   text-align: left;
