@@ -683,6 +683,10 @@ body.offcanvas {
     border-bottom: 2px solid #a84cb8; }
     .services.color-4 .icon2 i {
       color: #a84cb8; }
+  .services.color-10 {
+    border-bottom: 2px solid #21ac3f; }
+    .services.color-10 .icon2 i {
+      color: #21ac3f; }
   .services.color-5 {
     border-bottom: 2px solid #2fa499; }
   .services.color-6 {
@@ -868,6 +872,12 @@ body.offcanvas {
       background: #21ac3f; }
     .progress-bar.color-10 span {
       color: #21ac3f; }
+  .progress-bar.color-11 {
+    background: #9ccaf0; }
+    .progress-bar.color-11:after {
+      background: #9ccaf0; }
+    .progress-bar.color-11 span {
+      color: #9ccaf0; }
 
 .colorlib-feature {
   text-align: left;
