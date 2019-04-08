@@ -196,16 +196,18 @@ figure {
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-    #colorlib-aside #colorlib-main-menu .colorlib-footer li {
-      font-size: 22px;
-      display: inline; }
-      #colorlib-aside #colorlib-main-menu .colorlib-footer li a {
-        color: black;
-        padding: 4px; }
-        #colorlib-aside #colorlib-main-menu .colorlib-footer li a:hover, #colorlib-aside #colorlib-main-menu .colorlib-footer li a:active, #colorlib-aside #colorlib-main-menu .colorlib-footer li a:focus {
-          text-decoration: none;
-          outline: none;
-          color: #2c98f0; }
+    #colorlib-aside #colorlib-main-menu .colorlib-footer {
+      margin-top: 32px; }
+      #colorlib-aside #colorlib-main-menu .colorlib-footer li {
+        font-size: 22px;
+        display: inline; }
+        #colorlib-aside #colorlib-main-menu .colorlib-footer li a {
+          color: black;
+          padding: 4px; }
+          #colorlib-aside #colorlib-main-menu .colorlib-footer li a:hover, #colorlib-aside #colorlib-main-menu .colorlib-footer li a:active, #colorlib-aside #colorlib-main-menu .colorlib-footer li a:focus {
+            text-decoration: none;
+            outline: none;
+            color: #2c98f0; }
   #colorlib-aside .colorlib-footer {
     font-size: 15px;
     text-align: center;
