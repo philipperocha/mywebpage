@@ -205,6 +205,7 @@ figure {
     }
     
     &:hover {
+        @include translateX(0);
         overflow-y: scroll;
         
     }
@@ -316,7 +317,23 @@ figure {
 					}
 				}
 			}
-		}
+        }
+        .colorlib-footer {
+            li {
+                font-size: 22px;
+                display: inline;
+                a {
+                    color: rgba(0,0,0,1);
+					padding: 4px;
+					&:hover, &:active, &:focus {
+						text-decoration: none;
+						outline: none;
+                        color: $brand-primary;
+                        //background-color: yellow;
+					}
+				}
+            }
+        }
 	}
 	.colorlib-footer {
 		font-size: 15px;
@@ -326,8 +343,8 @@ figure {
 		padding: 0 20px;
 		width: 100%;
 		@media screen and (max-width: $screen-sm) {
-			position: relative;
-			bottom: 0;
+			// position: fixed;
+			// bottom: 0;
 		}
 		span {
 			display: block;
@@ -525,11 +542,12 @@ body {
             background: $brand-gray;
 			z-index: 999;
 			position: fixed;
-		}
-		#colorlib-main, .colorlib-nav-toggle {
-			top: 0;
-			@include translateX(300px);
-		}
+        }
+        
+		// #colorlib-main, .colorlib-nav-toggle {
+		// 	top: 0;
+		// 	@include translateX(300px);
+		// }
 	}
 }
 
