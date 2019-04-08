@@ -559,7 +559,11 @@ body {
 	@media screen and(max-width: $screen-sm){
 		padding-top: 5em;
 		padding-bottom: 8em;
-	}
+    }
+    .buttonDisable{
+        cursor: not-allowed;
+        pointer-events: none;
+    }
 }
 
 
@@ -1282,9 +1286,9 @@ margin-left: -20px;
 					display: inline;
 					padding-right: 5px;
 					a{
-						color: lighten($brand-black,20%);
+						color: lighten($brand-black,30%);
 						padding: 5px;
-						background: rgba(255,255,255,.5);
+						background: rgba(255,255,255,.7);
 						@include border-radius(4px);
 					}
 				}
@@ -1296,8 +1300,8 @@ margin-left: -20px;
 		}
 		h3{
 			font-family: $font-primary;
-			font-size: 16px;
-			font-weight: 500;
+			font-size: 20px;
+			font-weight: 600;
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -1318,7 +1322,10 @@ margin-left: -20px;
 			-webkit-transform: translate3d(0, 15px, 0);
 			transform: translate3d(0, 15px, 0);
 			a{
-				color: $brand-black;
+                //color: $brand-white;
+                font-size: 14px;
+                color: rgba(255,255,255,.7);
+				//color: $brand-black;
 			}
 		}
 		// @media screen and(max-width: $screen-sm){
@@ -1525,6 +1532,10 @@ margin-left: -20px;
 		outline: none!important;
 	}
 }
+.btn-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
 .btn-primary {
 	background: $brand-primary;
 	color: $brand-white;
@@ -1541,7 +1552,7 @@ margin-left: -20px;
 			background: $brand-primary;
 			color: $brand-white;
 		}
-	}
+    }
 }
 .btn-success {
 	background: $brand-success;

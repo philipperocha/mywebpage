@@ -413,6 +413,16 @@ body.offcanvas {
     .colorlib-contact {
       padding-top: 5em;
       padding-bottom: 8em; } }
+  .colorlib-experience .buttonDisable,
+  .colorlib-skills .buttonDisable,
+  .colorlib-education .buttonDisable,
+  .colorlib-blog .buttonDisable,
+  .colorlib-work .buttonDisable,
+  .colorlib-about .buttonDisable,
+  .colorlib-services .buttonDisable,
+  .colorlib-contact .buttonDisable {
+    cursor: not-allowed;
+    pointer-events: none; }
 
 .author-img {
   background-size: cover;
@@ -981,9 +991,9 @@ body.offcanvas {
           display: inline;
           padding-right: 5px; }
           .project .desc .con .icon span a {
-            color: #333333;
+            color: #4d4d4d;
             padding: 5px;
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.7);
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
@@ -993,8 +1003,8 @@ body.offcanvas {
           color: #333333; }
     .project .desc h3 {
       font-family: "Quicksand", Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: 20px;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -1013,7 +1023,8 @@ body.offcanvas {
       -webkit-transform: translate3d(0, 15px, 0);
       transform: translate3d(0, 15px, 0); }
       .project .desc span a {
-        color: #000; }
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7); }
   .project:hover .desc {
     opacity: 1; }
     .project:hover .desc h3 {
@@ -1186,6 +1197,10 @@ body.offcanvas {
   .btn:hover, .btn:active, .btn:focus {
     box-shadow: none !important;
     outline: none !important; }
+
+.btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none; }
 
 .btn-primary {
   background: #2c98f0;

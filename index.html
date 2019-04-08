@@ -48,7 +48,13 @@
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <![endif]-->
+
+    <script>
+        function privatePage() {
+            alert("This project has private content...");
+        }
+    </script>
 
 </head>
 
@@ -409,8 +415,12 @@
                                 <div class="project" style="background-image: url(images/img-1.jpg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a href="work.html">Slack Chat App (WEB)</a></h3>
-                                            <span>Web project created during an Udemy course using React, Redux, and Firebase.</span>
+                                            <h3><a href="https://react-slack-clone-2.firebaseapp.com/login">Slack Chat App (WEB)</a></h3>
+                                            <span>
+                                                <a href="https://react-slack-clone-2.firebaseapp.com/login">
+                                                    Web project created during an Udemy course using React, Redux, and Firebase.
+                                                </a>
+                                            </span>
                                             <p class="icon">
                                                 <span>
                                                     <a href="https://github.com/philipperocha/react-slack-clone">
@@ -429,8 +439,14 @@
                                             <h3><a href="work.html">Group Chat App</a></h3>
                                             <span>Mobile App (IOS and Android) created for NUVEM INC startup using React Native, Redux, NodeJS and Firebase.</span>
                                             <p class="icon">
-                                                <span><a href="#" class="buttonDisable"><i class="icon-github"></i> Github</a></span>
+                                                <span>
+
+                                                        <a href="#null" onclick="privatePage()">
+                                                                <i class="icon-github"></i> Github
+                                                            </a>
+                                                </span>
                                             </p>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -439,7 +455,7 @@
                                 <div class="project" style="background-image: url(images/img-3.jpg);">
                                     <div class="desc">
                                         <div class="con">
-                                            <h3><a href="work.html">Online Store Website</a></h3>
+                                            <h3><a href="work2.html">Online Store Website</a></h3>
                                             <span>Web project created during an online course using React and ASP.NET MVC 5.</span>
                                             <p class="icon">
                                                 <span><a href="https://github.com/philipperocha/reactAspx-back">
@@ -455,7 +471,11 @@
                                     <div class="desc">
                                         <div class="con">
                                             <h3><a href="https://play.google.com/store/apps/details?id=nuvem.camara.lagarto">Câmara Municipal de Lagarto App</a></h3>
-                                            <span>Mobile App (IOS and Android) created for NUVEM INC startup using React Native and Firebase.</span>
+                                            <span>
+                                                <a href="https://play.google.com/store/apps/details?id=nuvem.camara.lagarto">
+                                                    Mobile App (IOS and Android) created for NUVEM INC startup using React Native and Firebase.
+                                                </a>
+                                            </span>
                                             <p class="icon">
                                                 <span><a href="https://github.com/philipperocha/syscamara">
                                                     <i class="icon-github"></i> Github</a>
@@ -500,7 +520,7 @@
                                                         Federal de Sergipe, Brazil (2010 - 2014). 
                                                         <a href="http://www.ufs.br/"> See more</a>
                                                     </p>
-                                                    <p>Relevant courses are listed bellow.</p>
+                                                    <p>Relevant courses are listed below.</p>
                                                     <ul>
                                                         <li>Object Oriented Programming</li>
                                                         <li>Database</li>
@@ -525,7 +545,7 @@
                                                 aria-labelledby="headingThree">
                                                 <div class="panel-body">
                                                     <p>Software Development Courses from Udemy has been important for improving skills
-                                                        on updated technologies. Relevant courses are listed bellow.
+                                                        on updated technologies. Relevant courses are listed below.
                                                     </p>
                                                     <ul>
                                                         <li>
@@ -681,7 +701,7 @@
                                                     placeholder="Message"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <input type="submit" class="btn btn-primary btn-send-message"
+                                                <input type="submit" class="btn btn-primary btn-send-message btn-disabled"
                                                     value="Send Message">
                                             </div>
                                         </form>

@@ -294,7 +294,7 @@
 		      "<i class='icon-arrow-right3 owl-direction'></i>"
 	     	]
 		})
-	};
+    };
 
 	// Document on load.
 	$(function(){
