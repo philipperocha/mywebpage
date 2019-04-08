@@ -343,12 +343,13 @@ figure {
 				display: inline;
 				list-style: none;
 				a {
-                    color:#2c98f0;
+                    color: #60abe9;
 					padding: 4px;
 					&:hover, &:active, &:focus {
 						text-decoration: none;
 						outline: none;
-						color: $brand-primary;
+                        color: rgb(216, 216, 84);
+                        //background-color: yellow;
 					}
 				}
 			}
