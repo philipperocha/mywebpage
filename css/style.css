@@ -540,6 +540,8 @@ body.offcanvas {
   padding: 1.5em;
   margin-top: 5px;
   border: 1px solid #e6e6e6 !important; }
+  .panel-body a {
+    color: #73b0e2; }
 
 .timeline-centered {
   position: relative;
@@ -619,6 +621,9 @@ body.offcanvas {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
+
+.timeline-label a {
+  color: #73b0e2; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
   content: '';
@@ -948,13 +953,16 @@ body.offcanvas {
   width: 100%;
   display: block;
   margin-bottom: 30px; }
+  .project .buttonDisable {
+    cursor: not-allowed;
+    pointer-events: none; }
   .project .desc {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.95);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
