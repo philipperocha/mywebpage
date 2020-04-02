@@ -222,6 +222,11 @@ figure {
 		font-size: 12px;
 		text-transform: uppercase;
 	}
+	.position0{
+		display: block;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
 	#colorlib-logo {
 		text-align: right;
 		font-weight: 700;
@@ -238,7 +243,13 @@ figure {
     }
     .position {
         a {
-            color: black;
+			color: rgb(85, 85, 85);
+        }
+    }
+    .position0 {
+		a {
+			color: black;
+			font-weight: 500;
         }
     }
     #colorlib-main-menu {
