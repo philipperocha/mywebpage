@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html data-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -92,6 +92,37 @@
                         </ul>
                         <p><small>colorlib, 2019</small></p>
                     </div>
+                    <div class="colorlib-footer">
+                        <!-- <button onclick="changeTheme()">Click me</button> -->
+
+                        <div style="display: inline-block;">
+                            <input type="checkbox" id="switch" name="theme" />
+                            <label for="switch">Toggle</label>
+                        </div>
+                       
+
+                        <script>
+                            var checkbox = document.querySelector('input[name=theme]');
+
+                            checkbox.addEventListener('change', function() {
+                                if(this.checked) {
+                                    trans();
+                                    document.documentElement.setAttribute('data-theme', 'light');
+                                } else {
+                                    trans();
+                                    document.documentElement.setAttribute('data-theme', 'dark');
+                                }
+                            });
+
+                            let trans = () => {
+                                document.documentElement.classList.add('transition');
+                                window.setTimeout(() => {
+                                    document.documentElement.classList.remove('transition');
+                                }, 600);
+                            }
+                        </script>
+                    </div>
+
                 </nav>
 
 
