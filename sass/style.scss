@@ -1873,7 +1873,7 @@ margin-left: -20px;
 	@include transition(.5s);
   	@media screen and (max-width: $screen-sm) {
   		opacity: 1;
-		visibility: visible;
+		visibility: none;
   	}
   
 }
