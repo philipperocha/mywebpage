@@ -85,46 +85,46 @@
                             <li><a href="#" data-nav-section="contact">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="colorlib-footer">
-                        <ul>
-                            <li><a href="https://github.com/philipperocha"><i class="icon-github"></i></a></li>
-                            <li><a href="http://linkedin.com/in/liperocha/"><i class="icon-linkedin2"></i></a></li>
-                        </ul>
-                        <p><small>colorlib, 2019</small></p>
-                    </div>
-                    <div class="colorlib-footer">
-                        <!-- <button onclick="changeTheme()">Click me</button> -->
-
-                        <div style="display: inline-block;">
-                            <input type="checkbox" id="switch" name="theme" />
-                            <label for="switch">Toggle</label>
-                        </div>
-                       
-
-                        <script>
-                            var checkbox = document.querySelector('input[name=theme]');
-
-                            checkbox.addEventListener('change', function() {
-                                if(this.checked) {
-                                    trans();
-                                    document.documentElement.setAttribute('data-theme', 'light');
-                                } else {
-                                    trans();
-                                    document.documentElement.setAttribute('data-theme', 'dark');
-                                }
-                            });
-
-                            let trans = () => {
-                                document.documentElement.classList.add('transition');
-                                window.setTimeout(() => {
-                                    document.documentElement.classList.remove('transition');
-                                }, 600);
-                            }
-                        </script>
-                    </div>
-
+                    
                 </nav>
+                
+                <div class="colorlib-footer">
+                    <ul>
+                        <li><a href="https://github.com/philipperocha"><i class="icon-github"></i></a></li>
+                        <li><a href="http://linkedin.com/in/liperocha/"><i class="icon-linkedin2"></i></a></li>
+                    </ul>
+                    <p><small>colorlib, 2019</small></p>
+                </div>
+                <div class="colorlib-footer">
+                    <!-- <button onclick="changeTheme()">Click me</button> -->
 
+                    <div style="display: inline-block;">
+                        <input type="checkbox" id="switch" name="theme" />
+                        <label for="switch">Toggle</label>
+                    </div>
+                   
+
+                    <script>
+                        var checkbox = document.querySelector('input[name=theme]');
+
+                        checkbox.addEventListener('change', function() {
+                            if(this.checked) {
+                                trans();
+                                document.documentElement.setAttribute('data-theme', 'light');
+                            } else {
+                                trans();
+                                document.documentElement.setAttribute('data-theme', 'dark');
+                            }
+                        });
+
+                        let trans = () => {
+                            document.documentElement.classList.add('transition');
+                            window.setTimeout(() => {
+                                document.documentElement.classList.remove('transition');
+                            }, 600);
+                        }
+                    </script>
+                </div>
 
             </aside>
 
