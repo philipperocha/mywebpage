@@ -62,6 +62,7 @@ html {
 	--sideBarTextHover: rgba(0,0,0,2);
 
 	--color-headings: #2c98f0;
+	--colorScroll:  #cacaca;
 }
 
 html[data-theme='dark'] {
@@ -90,6 +91,7 @@ html[data-theme='dark'] {
 	--sideBarTextHover: rgba(15, 128, 235, 0.6);
 
 	--color-headings: #3694FF;
+	--colorScroll:  #cacaca;
 }
 
 
@@ -251,7 +253,7 @@ figure {
 	float: left;
 	width: 300px;
 	position: fixed;
-	overflow-y: hidden;
+	overflow-y: scroll;
 	z-index: 1001;
     //background: $brand-gray;
 	background: var(--bgColorAside);
@@ -264,11 +266,11 @@ figure {
 		padding-top: 4em;
     }
     
-    &:hover {
-        @include translateX(0);
-        overflow-y: scroll;
+    // &:hover {
+    //     @include translateX(0);
+    //     overflow-y: scroll;
         
-    }
+    // }
 	.author-img{
 		width: 150px;
 		height: 150px;
@@ -281,11 +283,19 @@ figure {
 		margin-bottom: 2em;
 		font-size: 12px;
 		text-transform: uppercase;
+		a {
+			color: var(--fontColorLocation);
+		}
 	}
 	.position0{
 		display: block;
 		font-size: 12px;
 		text-transform: uppercase;
+		a {
+			//color: black;
+			color: var(--fontColorTitle);
+			font-weight: 500;
+		}
 	}
 	#colorlib-logo {
 		text-align: right;
@@ -301,18 +311,6 @@ figure {
 			color: var(--fontColorTitle);
 			padding-right: .3em;
 		}
-    }
-    .position {
-        a {
-			color: var(--fontColorLocation);
-        }
-    }
-    .position0 {
-		a {
-			//color: black;
-			color: var(--fontColorTitle);
-			font-weight: 500;
-        }
     }
     #colorlib-main-menu {
 		display: block;
@@ -391,27 +389,27 @@ figure {
 				}
 			}
         }
-        .colorlib-footer {
-			margin-top: 32px;
-			color: var(--fontColorAside);
-            li {
-                font-size: 22px;
-                display: inline;
-                a {
-					color: var(--fontColorAside);
-					padding: 4px;
-					&:hover, &:active, &:focus {
-						text-decoration: none;
-						outline: none;
-                        color: $brand-primary;
-                        //background-color: yellow;
-					}
-				}
-            }
-			p {
-				color: var(--fontColorAsideFooter);
-			}
-        }
+        // .colorlib-footer {
+		// 	margin-top: 32px;
+		// 	color: var(--fontColorAside);
+        //     li {
+        //         font-size: 22px;
+        //         display: inline;
+        //         a {
+		// 			color: var(--fontColorAside);
+		// 			padding: 4px;
+		// 			&:hover, &:active, &:focus {
+		// 				text-decoration: none;
+		// 				outline: none;
+        //                 color: $brand-primary;
+        //                 //background-color: yellow;
+		// 			}
+		// 		}
+        //     }
+		// 	p {
+		// 		color: var(--fontColorAsideFooter);
+		// 	}
+        // }
 	}
 	.colorlib-footer {
 		font-size: 15px;
@@ -421,8 +419,8 @@ figure {
 		padding: 0 20px;
 		width: 100%;
 		@media screen and (max-width: $screen-sm) {
-			// position: fixed;
-			// bottom: 0;
+			position: relative;
+			bottom: 0;
 		}
 		span {
 			display: block;
@@ -617,15 +615,27 @@ body {
 		#colorlib-aside {
 			@include translateX(0);
 			width: 300px;
-            background: $brand-gray;
+            //background: $brand-gray;
+            background: var(--bgColorAside);
 			z-index: 999;
 			position: fixed;
+
+			::-webkit-scrollbar {
+				width: 5px;
+			}
+			::-webkit-scrollbar-track {
+				//background: pink;
+				background: var(--bgGray); 
+			}
+			::-webkit-scrollbar-thumb {
+				background: var(--colorScroll);
+			}
         }
         
-		// #colorlib-main, .colorlib-nav-toggle {
-		// 	top: 0;
-		// 	@include translateX(300px);
-		// }
+		#colorlib-main, .colorlib-nav-toggle {
+			top: 0;
+			@include translateX(300px);
+		}
 	}
 }
 
@@ -1771,13 +1781,13 @@ margin-left: -20px;
   text-decoration: none;
   &.active i {
 		&::before, &::after {
-			background: $brand-black;
+			background: var(--fontColor);
 		}
   }
   &.dark {
   	&.active i {
 			&::before, &::after {
-				background: $brand-black;
+				background: var(--fontColor);
 			}
 	  }
   }
@@ -1790,17 +1800,17 @@ margin-left: -20px;
 	  @include inline-block;
 	  width: 30px;
 	  height: 2px;
-	  color: $brand-black;
+	  color: var(--fontColor);
 	  font:bold 14px/.4 Helvetica;
 	  text-transform: uppercase;
 	  text-indent:-55px;
-	  background: $brand-black;
+	  background: var(--fontColor);
 	  transition: all .2s ease-out;
 		 &::before, &::after {
 	  	  content:'';
 		  width: 30px;
 		  height: 2px;
-		  background: $brand-black;
+		  background: var(--fontColor);
 		  position: absolute;
 		  left:0;
 		  @include transition(.2s);
@@ -1809,11 +1819,11 @@ margin-left: -20px;
   &.dark {
   	i {
 	  	position: relative;
-		  color: $brand-black;
+		  color: var(--fontColor);
 		  background: $brand-black;
 		  transition: all .2s ease-out;
 			 &::before, &::after {
-			  background: $brand-black;
+			  background: var(--fontColor);
 			  @include transition(.2s);
 		  }
 	  }
@@ -1957,4 +1967,15 @@ html.transition *:before,
 html.transition *:after {
   transition: all 600ms !important;
   transition-delay: 0 !important;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	//background: pink;
+	background: var(--bgGray); 
+}
+::-webkit-scrollbar-thumb {
+	background: var(--colorScroll);
 }
