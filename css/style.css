@@ -651,7 +651,8 @@ body.offcanvas {
 
 .timeline-centered .timeline-entry .timeline-entry-inner {
   position: relative;
-  margin-left: -20px; }
+  margin-left: -20px;
+  font-size: 14px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
   display: block;
@@ -713,7 +714,7 @@ body.offcanvas {
   margin-top: 15px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 500; }
 
